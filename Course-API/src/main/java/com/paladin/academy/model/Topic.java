@@ -1,10 +1,14 @@
 package com.paladin.academy.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 import org.springframework.stereotype.Component;
 
-@Component
+@Entity
 public class Topic {
 	
+	@Id
 	private String id;
 	private String name;
 	private String description;

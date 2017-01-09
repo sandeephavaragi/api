@@ -1,4 +1,4 @@
-package com.paladin.academy;
+package com.sh.academy;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -64,9 +64,9 @@ public class TopicService {
 	
 	
 	public void updateTopic(String id, Topic topic){
-//		Topic updateTopic = topics.stream().filter(t->t.getId().equalsIgnoreCase(id)).findFirst().get();
-//		updateTopic.setName(topic.getName());;
-//		updateTopic.setDescription(topic.getDescription());;
+		if(topicRepository.exists(id)){
+			topicRepository.save(topic);
+		}
 	}
 	
 	public void deleteTopic(String id){
